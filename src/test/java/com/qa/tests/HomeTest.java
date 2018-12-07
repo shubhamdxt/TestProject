@@ -1,6 +1,7 @@
 package com.qa.tests;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -41,6 +42,16 @@ public class HomeTest extends BaseClass{
 		Assert.assertTrue(flag);
 	}
 	
+	@Test(priority=3)
+	public void verifyLoginLink() throws InterruptedException {
+		Thread.sleep(2000);
+		loginPage=homePage.clickforLogin();
+		Thread.sleep(2000);
+	}
 	
-
+	
+@AfterMethod
+public void tearDown() {
+	driver.quit();
+}
 }
