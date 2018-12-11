@@ -3,7 +3,10 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.qa.tests.HomeTest"/>
+     <class name="com.qa.tests.HomeTest"/>
+      <class name="com.qa.tests.LoginTest"/>
+      <class name="com.qa.tests.DashboardTest"/>
+     
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

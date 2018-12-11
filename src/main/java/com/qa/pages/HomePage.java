@@ -30,9 +30,10 @@ public class HomePage extends BaseClass{
 		return utailerLogo.isDisplayed();
 	}
 	
-	public LoginPage clickforLogin() {
+	public LoginPage clickforLogin() throws InterruptedException {
+		Thread.sleep(3000);
 		homePageLoginlink.click();
-	
+		Thread.sleep(3000);
 		return new LoginPage();
 }
 

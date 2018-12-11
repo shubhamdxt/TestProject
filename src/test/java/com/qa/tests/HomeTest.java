@@ -44,9 +44,9 @@ public class HomeTest extends BaseClass{
 	
 	@Test(priority=3)
 	public void verifyLoginLink() throws InterruptedException {
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		loginPage=homePage.clickforLogin();
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 	}
 	
 	

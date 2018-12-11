@@ -1,49 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="34359" started-at="2018-12-07T14:06:17Z" finished-at="2018-12-07T14:06:52Z">
+  <suite name="Default suite" duration-ms="100075" started-at="2018-12-11T15:01:33Z" finished-at="2018-12-11T15:03:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="34359" started-at="2018-12-07T14:06:17Z" finished-at="2018-12-07T14:06:52Z">
+    <test name="Default test" duration-ms="100075" started-at="2018-12-11T15:01:33Z" finished-at="2018-12-11T15:03:13Z">
       <class name="com.qa.tests.HomeTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.HomeTest@68c4039c]" name="setUp" is-config="true" duration-ms="9854" started-at="2018-12-07T19:36:17Z" finished-at="2018-12-07T19:36:27Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.HomeTest@66a3ffec]" name="setUp" is-config="true" duration-ms="18591" started-at="2018-12-11T20:32:13Z" finished-at="2018-12-11T20:32:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="homePageTitleTest()[pri:1, instance:com.qa.tests.HomeTest@68c4039c]" name="homePageTitleTest" duration-ms="12" started-at="2018-12-07T19:36:27Z" finished-at="2018-12-07T19:36:27Z">
+        <test-method status="PASS" signature="homePageTitleTest()[pri:1, instance:com.qa.tests.HomeTest@66a3ffec]" name="homePageTitleTest" duration-ms="9" started-at="2018-12-11T20:32:31Z" finished-at="2018-12-11T20:32:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.HomeTest@68c4039c]" name="tearDown" is-config="true" duration-ms="598" started-at="2018-12-07T19:36:27Z" finished-at="2018-12-07T19:36:28Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.HomeTest@66a3ffec]" name="tearDown" is-config="true" duration-ms="594" started-at="2018-12-11T20:32:31Z" finished-at="2018-12-11T20:32:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.HomeTest@68c4039c]" name="setUp" is-config="true" duration-ms="8918" started-at="2018-12-07T19:36:28Z" finished-at="2018-12-07T19:36:37Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.HomeTest@66a3ffec]" name="setUp" is-config="true" duration-ms="12959" started-at="2018-12-11T20:32:32Z" finished-at="2018-12-11T20:32:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="utailerLogoTest()[pri:2, instance:com.qa.tests.HomeTest@68c4039c]" name="utailerLogoTest" duration-ms="42" started-at="2018-12-07T19:36:37Z" finished-at="2018-12-07T19:36:37Z">
+        <test-method status="PASS" signature="utailerLogoTest()[pri:2, instance:com.qa.tests.HomeTest@66a3ffec]" name="utailerLogoTest" duration-ms="33" started-at="2018-12-11T20:32:45Z" finished-at="2018-12-11T20:32:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- utailerLogoTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.HomeTest@68c4039c]" name="tearDown" is-config="true" duration-ms="586" started-at="2018-12-07T19:36:37Z" finished-at="2018-12-07T19:36:37Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.HomeTest@66a3ffec]" name="tearDown" is-config="true" duration-ms="578" started-at="2018-12-11T20:32:45Z" finished-at="2018-12-11T20:32:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.HomeTest@68c4039c]" name="setUp" is-config="true" duration-ms="9666" started-at="2018-12-07T19:36:37Z" finished-at="2018-12-07T19:36:47Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.HomeTest@66a3ffec]" name="setUp" is-config="true" duration-ms="12596" started-at="2018-12-11T20:32:45Z" finished-at="2018-12-11T20:32:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyLoginLink()[pri:3, instance:com.qa.tests.HomeTest@68c4039c]" name="verifyLoginLink" duration-ms="4073" started-at="2018-12-07T19:36:47Z" finished-at="2018-12-07T19:36:51Z">
+        <test-method status="PASS" signature="verifyLoginLink()[pri:3, instance:com.qa.tests.HomeTest@66a3ffec]" name="verifyLoginLink" duration-ms="14111" started-at="2018-12-11T20:32:58Z" finished-at="2018-12-11T20:33:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginLink -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.HomeTest@68c4039c]" name="tearDown" is-config="true" duration-ms="588" started-at="2018-12-07T19:36:51Z" finished-at="2018-12-07T19:36:52Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.HomeTest@66a3ffec]" name="tearDown" is-config="true" duration-ms="592" started-at="2018-12-11T20:33:12Z" finished-at="2018-12-11T20:33:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.tests.HomeTest -->
+      <class name="com.qa.tests.LoginTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.LoginTest@77caeb3e]" name="setUp" is-config="true" duration-ms="9620" started-at="2018-12-11T20:31:46Z" finished-at="2018-12-11T20:31:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.qa.tests.LoginTest@77caeb3e]" name="loginTest" duration-ms="17389" started-at="2018-12-11T20:31:55Z" finished-at="2018-12-11T20:32:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+      </class> <!-- com.qa.tests.LoginTest -->
+      <class name="com.qa.tests.DashboardTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.DashboardTest@1e88b3c]" name="setUp" is-config="true" duration-ms="10837" started-at="2018-12-11T20:31:33Z" finished-at="2018-12-11T20:31:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyMenLink()[pri:0, instance:com.qa.tests.DashboardTest@1e88b3c]" name="verifyMenLink" duration-ms="1506" started-at="2018-12-11T20:31:43Z" finished-at="2018-12-11T20:31:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMenLink -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.DashboardTest@1e88b3c]" name="tearDown" is-config="true" duration-ms="639" started-at="2018-12-11T20:31:45Z" finished-at="2018-12-11T20:31:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.tests.DashboardTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
