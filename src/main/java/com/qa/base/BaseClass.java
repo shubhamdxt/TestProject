@@ -23,7 +23,7 @@ public class BaseClass {
 		
 			prop=new Properties();
 		
-			FileInputStream fileInputStream=new FileInputStream("G:\\New folder\\UtailerProject\\src\\main\\java\\com\\qa\\config\\config.properties");
+			FileInputStream fileInputStream=new FileInputStream("C:\\Users\\akansha\\git\\TestProject\\src\\main\\java\\com\\qa\\config\\config.properties");
 		     prop.load(fileInputStream);
 		} 
 		catch (FileNotFoundException e) {
@@ -39,7 +39,7 @@ public class BaseClass {
 		String browserName=prop.getProperty("browser");
 		
 		if(browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "G:\\New folder\\UtailerProject\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\akansha\\git\\TestProject\\chromedriver.exe");
 			driver=new ChromeDriver();
 			driver.manage().window().maximize();
 			

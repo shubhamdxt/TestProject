@@ -32,7 +32,7 @@ public class HomeTest extends BaseClass{
 		
 		String title=homePage.validateHomePageTitle();
 		System.out.println("This is my home page title:"+title);
-	
+	System.out.println("I am testing this project");
         }
 	
 	@Test(priority=2)
