@@ -27,6 +27,9 @@ public class LoginPage extends BaseClass{
 	}
 	
 	
+	public String loginPageTitle() {
+		return driver.getTitle();
+	}
 	public DashboardPage login(String emil,String pass) throws InterruptedException {
 		Thread.sleep(2000);
 		emailId.sendKeys(emil);

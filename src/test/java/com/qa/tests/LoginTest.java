@@ -31,7 +31,13 @@ public class LoginTest extends BaseClass{
 		dashboardPage=new DashboardPage();
 	}
 	
-	@Test
+	
+	@Test(priority=1)
+	public void verifyLoginPageTitle() {
+		loginPage.loginPageTitle();
+	}
+	
+	@Test(priority=2)
 	public void loginTest() throws InterruptedException {
 		  Thread.sleep(3000);
 		  System.out.println("before login");
@@ -46,8 +52,8 @@ public class LoginTest extends BaseClass{
 	
 		}
 	
-	/*@AfterMethod
+	@AfterMethod
 	public void tearDown(){
 		driver.quit();
-	}*/
+	}
 }

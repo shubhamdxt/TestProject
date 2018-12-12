@@ -1,5 +1,8 @@
 package com.qa.pages;
 
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -23,10 +26,17 @@ public class DashboardPage extends BaseClass{
 	@FindBy(xpath="//input[@name='q']")
 	WebElement searchBox; @FindBy(xpath="//input[@value='Submit']") WebElement searchButton;
 	
+	@FindBy(xpath="//div[@class='products']") WebElement productSize;
+	
+	@FindBy(xpath="//input[@class='manufacturerproduct']") WebElement checkboxBrand;
+	
 	public DashboardPage()   {
 		PageFactory.initElements(driver, this);
 	}
-
+	
+	public String validateDashboardPageTitle(){
+		return driver.getTitle();
+	}
 	
 	public MenPage clickonMenLink() {
 		
@@ -34,4 +44,19 @@ public class DashboardPage extends BaseClass{
 		
 		return new MenPage();
 	}
+	
+	public void productSize() {
+		 List<WebElement> product=driver.findElements(By.xpath("//div[@class='products']"));
+	//	List<WebElement> rows=driver.findElements(By.name(name))
+		    int count = product.size();
+		    System.out.println("this is size of product:"+count);
+//		    for (WebElement items : rows){
+//		    System.out.println(items.getText());
+//		    }
+	}
+	
+	public void checkboxBrand() {
+		//List<WebElement>=driver.findElements("checkboxBrand");
+	}
+	
 }

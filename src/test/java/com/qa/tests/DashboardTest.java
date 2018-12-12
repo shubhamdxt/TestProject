@@ -27,14 +27,34 @@ public class DashboardTest extends BaseClass{
 		dashboardPage=new DashboardPage();
 	}
 
-	@Test
-	public void verifyMenLink() {
+	
+	@Test(priority=1)
+	public void verifyDasboardTitle() {
+		dashboardPage.validateDashboardPageTitle();
+	}
+	@Test(priority=2)
+	public void verifyMenLink() throws InterruptedException {
+		  homePage.clickforLogin();
+		  dashboardPage= loginPage.login(prop.getProperty("emailId"), prop.getProperty("password"));
+		 
 		dashboardPage.clickonMenLink();
+		
 	}
 	
-	
+	@Test(priority=3)
+	public void verifyProductSize() throws InterruptedException {
+		 homePage.clickforLogin();
+		  dashboardPage= loginPage.login(prop.getProperty("emailId"), prop.getProperty("password"));
+		 
+		dashboardPage.clickonMenLink();
+		dashboardPage.productSize();
+		
+		
+	}
 	@AfterMethod
 	public void tearDown() {
 		driver.quit();
 	}
+	
+	
 }
