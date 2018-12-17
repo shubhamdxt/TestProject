@@ -51,6 +51,18 @@ public class DashboardTest extends BaseClass{
 		
 		
 	}
+	
+	@Test(priority=4)
+	public void verifyCheckboxSize() throws InterruptedException {
+		 homePage.clickforLogin();
+		  dashboardPage= loginPage.login(prop.getProperty("emailId"), prop.getProperty("password"));
+		 
+		dashboardPage.clickonMenLink();
+		Thread.sleep(2000);
+		dashboardPage.checkboxBrand();
+		Thread.sleep(2000);
+		
+	}
 	@AfterMethod
 	public void tearDown() {
 		driver.quit();

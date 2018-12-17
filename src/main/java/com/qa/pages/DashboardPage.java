@@ -56,7 +56,9 @@ public class DashboardPage extends BaseClass{
 	}
 	
 	public void checkboxBrand() {
-		//List<WebElement>=driver.findElements("checkboxBrand");
+		List<WebElement> chechboxList=driver.findElements(By.xpath("//input[@class='manufacturerproduct']"));
+		int itemList=chechboxList.size();
+		System.out.println("Afetr one checkbox size of product is:"+itemList);
 	}
 	
 }
