@@ -50,7 +50,7 @@ public class LoginTest extends BaseClass{
 		  System.out.println("after login " +dashboardPage);
 		  
 		  
-		  System.out.println("this is login page");
+		  System.out.println("this is login page12");
 	
 		}
 	
