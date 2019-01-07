@@ -38,14 +38,10 @@ public class MenPage extends BaseClass{
 		if(!brandCheckbox.isSelected()) {
 			brandCheckbox.click();
 			System.out.println("the size of brand check box:"+brandCheckbox.getSize());
-			
-		}elseif(brandCheckbox) {
-			brandCheckbox.click();
-			System.out.println("the size of brand check box:"+brandCheckbox.getSize());
-			
+			System.out.println("hhdhghghdhg");
 		}
 		
-		
+	}	
 	/*List<WebElement> byBrand=driver.findElements(By.xpath("//input[@type='checkbox']"));
 	
 	for(int i=0;i<byBrand.size();i++) {
@@ -61,11 +57,8 @@ public class MenPage extends BaseClass{
 	//	System.out.println(byBrand.get(i).click());
 	}*/
 	
-	}
+	
 
-	private void elseif(boolean b) {
-		// TODO Auto-generated method stub
-		
-	}
+	
 
 }
