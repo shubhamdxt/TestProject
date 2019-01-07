@@ -2,13 +2,17 @@ package com.qa.pages;
 
 import java.util.List;
 
+import org.apache.poi.hssf.record.PageBreakRecord.Break;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.qa.base.BaseClass;
 
 public class MenPage extends BaseClass{
+	
+	@FindBy(xpath="(//input[@class='manufacturerproduct'])[1]") WebElement brandCheckbox;
 	
 	
 	public MenPage()   {
@@ -31,7 +35,18 @@ public class MenPage extends BaseClass{
 		    
 }
 	public void filterByBrand() {
-	List<WebElement> byBrand=driver.findElements(By.xpath("//input[@type='checkbox']"));
+		if(!brandCheckbox.isSelected()) {
+			brandCheckbox.click();
+			System.out.println("the size of brand check box:"+brandCheckbox.getSize());
+			
+		}elseif(brandCheckbox) {
+			brandCheckbox.click();
+			System.out.println("the size of brand check box:"+brandCheckbox.getSize());
+			
+		}
+		
+		
+	/*List<WebElement> byBrand=driver.findElements(By.xpath("//input[@type='checkbox']"));
 	
 	for(int i=0;i<byBrand.size();i++) {
 		System.out.println(byBrand.get(i).getText());
@@ -44,7 +59,13 @@ public class MenPage extends BaseClass{
 			System.out.println("fsfvs");
 		}
 	//	System.out.println(byBrand.get(i).click());
+	}*/
+	
 	}
+
+	private void elseif(boolean b) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
