@@ -18,7 +18,8 @@ public class LoginTest extends BaseClass{
 	LoginPage loginPage;
 	DashboardPage dashboardPage;
 		
-	public LoginTest() {
+	public LoginTest() 
+	{
 		super();
 	}
 	
@@ -45,7 +46,9 @@ public class LoginTest extends BaseClass{
 		  dashboardPage= loginPage.login(prop.getProperty("emailId"), prop.getProperty("password"));
 		  System.out.println("after login " +dashboardPage);
 		  System.out.println("this is login page12");
+		  
 		}
+	
 	@AfterMethod
 	public void tearDown(){
 		driver.quit();
