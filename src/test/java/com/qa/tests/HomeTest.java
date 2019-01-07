@@ -48,6 +48,7 @@ public class HomeTest extends BaseClass{
 		loginPage=homePage.clickforLogin();
 		Thread.sleep(4000);
 	System.out.println("ananda sir birthday");
+	System.out.println("ananda sir birthday");
 	}
 	
 	
