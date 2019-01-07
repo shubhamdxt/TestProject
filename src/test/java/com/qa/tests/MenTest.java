@@ -45,9 +45,7 @@ public class MenTest extends BaseClass{
 		Thread.sleep(2000);
 	    menPage.productSize();
 	    Thread.sleep(2000);
-		
-		
-	}
+		}
 	
 	@Test(priority=3)
 	public void verifyfilterbybrand() throws InterruptedException {
@@ -56,12 +54,12 @@ public class MenTest extends BaseClass{
 		Thread.sleep(2000);
 	    menPage.productSize();
 	    Thread.sleep(2000);
-	    menPage.filterByBrand();
+	    menPage.allfilterByBrand();
 	    Thread.sleep(2000);
 	}
-	@AfterMethod
+	/*@AfterMethod
 	public void tearDown() {
 		driver.quit();
-	}
+	}*/
 
 }
