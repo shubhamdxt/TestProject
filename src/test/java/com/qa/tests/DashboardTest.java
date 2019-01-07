@@ -36,15 +36,15 @@ public class DashboardTest extends BaseClass{
 	public void verifyMenLink() throws InterruptedException {
 		  homePage.clickforLogin();
 		  dashboardPage= loginPage.login(prop.getProperty("emailId"), prop.getProperty("password"));
-		 
+		 Thread.sleep(2000);
 		dashboardPage.clickonMenLink();
-		
+		 Thread.sleep(2000);
 	}
 	
-	@Test(priority=3)
+	/*@Test(priority=3)
 	public void verifyProductSize() throws InterruptedException {
-		 homePage.clickforLogin();
-		  dashboardPage= loginPage.login(prop.getProperty("emailId"), prop.getProperty("password"));
+//		 homePage.clickforLogin();
+//		  dashboardPage= loginPage.login(prop.getProperty("emailId"), prop.getProperty("password"));
 		 
 		dashboardPage.clickonMenLink();
 		dashboardPage.productSize();
@@ -54,15 +54,61 @@ public class DashboardTest extends BaseClass{
 	
 	@Test(priority=4)
 	public void verifyCheckboxSize() throws InterruptedException {
-		 homePage.clickforLogin();
-		  dashboardPage= loginPage.login(prop.getProperty("emailId"), prop.getProperty("password"));
-		 
+//		 homePage.clickforLogin();
+//		  dashboardPage= loginPage.login(prop.getProperty("emailId"), prop.getProperty("password"));
+//		 
 		dashboardPage.clickonMenLink();
 		Thread.sleep(2000);
 		dashboardPage.checkboxBrand();
 		Thread.sleep(2000);
+	
+		
 		
 	}
+	@Test(priority=5)
+	public void verifyFootwearLink() throws InterruptedException {
+	//	 homePage.clickforLogin();
+	//	  dashboardPage= loginPage.login(prop.getProperty("emailId"), prop.getProperty("password"));
+	 System.out.println("ver footwer");
+		dashboardPage.clickonMenLink();
+		Thread.sleep(2000);
+		 System.out.println("ver footwer1");
+		
+		dashboardPage.footbearlink();
+		Thread.sleep(2000);
+		 System.out.println("ver footwer2");
+
+		}
+	
+	@Test(priority=6)
+	public void verifySportShoeslink() throws InterruptedException {
+		dashboardPage.clickonMenLink();
+		Thread.sleep(2000);
+		
+		
+		dashboardPage.footbearlink();
+		Thread.sleep(2000);
+		dashboardPage.sportshoeslink();
+		Thread.sleep(2000);
+	
+	}
+	
+	
+	@Test(priority=7)
+	public void verifyCasulShoeslink() throws InterruptedException {
+		dashboardPage.clickonMenLink();
+		Thread.sleep(2000);
+		
+		
+		dashboardPage.footbearlink();
+		Thread.sleep(2000);
+		dashboardPage.sportshoeslink();
+		Thread.sleep(2000);
+		dashboardPage.casualshoeslink();
+		Thread.sleep(2000);
+	
+	}*/
+	
 	@AfterMethod
 	public void tearDown() {
 		driver.quit();

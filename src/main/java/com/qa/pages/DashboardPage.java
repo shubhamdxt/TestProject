@@ -4,13 +4,18 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import com.qa.base.BaseClass;
 
 public class DashboardPage extends BaseClass{
 	
+	private static final long ExpectedConditions = 0;
+
 	@FindBy(xpath="//a[text()='Home']")
 	WebElement homeLink;  @FindBy(xpath="//a[text()='Men']") WebElement menLink;
 	
@@ -30,6 +35,13 @@ public class DashboardPage extends BaseClass{
 	
 	@FindBy(xpath="//input[@class='manufacturerproduct']") WebElement checkboxBrand;
 	
+	@FindBy(xpath="//a[text()='Footwear']") WebElement footwearLink;
+	
+	@FindBy(xpath="//a[text()='Sports Shoes']") WebElement sportshoeslink;
+	
+	@FindBy(xpath="//a[text()='Sports Shoes']") WebElement casualshoesLink;
+	
+
 	public DashboardPage()   {
 		PageFactory.initElements(driver, this);
 	}
@@ -45,7 +57,7 @@ public class DashboardPage extends BaseClass{
 		return new MenPage();
 	}
 	
-	public void productSize() {
+	/*public void productSize() {
 		 List<WebElement> product=driver.findElements(By.xpath("//div[@class='products']"));
 	//	List<WebElement> rows=driver.findElements(By.name(name))
 		    int count = product.size();
@@ -53,7 +65,7 @@ public class DashboardPage extends BaseClass{
 //		    for (WebElement items : rows){
 //		    System.out.println(items.getText());
 //		    }
-	}
+	}*/
 	
 	public void checkboxBrand() {
 		List<WebElement> chechboxList=driver.findElements(By.xpath("//input[@class='manufacturerproduct']"));
@@ -61,4 +73,28 @@ public class DashboardPage extends BaseClass{
 		System.out.println("Afetr one checkbox size of product is:"+itemList);
 	}
 	
+	public void footbearlink() {
+		Actions action=new Actions(driver);
+	//	WebElement webElmnt=driver.findElement(By.xpath("//a[text()='Footwear']"));
+		action.moveToElement(footwearLink).build().perform();
+	
+	
+	}
+	
+	public void sportshoeslink() {
+		Actions actionsport=new Actions(driver);
+		
+		//WebElement webElmnt=driver.findElement(By.xpath("//a[text()='Footwear']"));
+		actionsport.moveToElement(sportshoeslink).build().perform();
+	
+	
+	}
+	public void casualshoeslink() {
+		Actions actioncasulsport=new Actions(driver);
+		
+		//WebElement webElmnt=driver.findElement(By.xpath("//a[text()='Footwear']"));
+		actioncasulsport.moveToElement(casualshoesLink).build().perform();
+	
+	
+	}
 }

@@ -8,8 +8,11 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
+
 
 import com.qa.util.TestUtil;
+import com.qa.util.WebEventListener;
 
 
 
@@ -17,6 +20,8 @@ public class BaseClass {
 	
 	public static WebDriver driver;
 	public static Properties prop;
+	public  static EventFiringWebDriver e_driver;
+	public static WebEventListener eventListener;
 	
 	public BaseClass() {
 		try {
@@ -41,6 +46,14 @@ public class BaseClass {
 		if(browserName.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "G:\\New folder\\UtailerProject\\chromedriver.exe");
 			driver=new ChromeDriver();
+			
+			
+			e_driver = new EventFiringWebDriver(driver);
+			// Now create object of EventListerHandler to register it with EventFiringWebDriver
+			eventListener = new WebEventListener();
+			e_driver.register(eventListener);
+			driver = e_driver;
+			
 			driver.manage().window().maximize();
 			
 			driver.manage().window().maximize();
