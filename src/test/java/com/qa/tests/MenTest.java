@@ -57,9 +57,9 @@ public class MenTest extends BaseClass{
 	    menPage.allfilterByBrand();
 	    Thread.sleep(2000);
 	}
-	/*@AfterMethod
+	@AfterMethod
 	public void tearDown() {
 		driver.quit();
-	}*/
+	}
 
 }

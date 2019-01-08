@@ -39,7 +39,6 @@ public class LoginPage extends BaseClass{
 		
 		loginBtn.click();
 		Thread.sleep(2000);
-		
 		return new DashboardPage();
 	
 	}
