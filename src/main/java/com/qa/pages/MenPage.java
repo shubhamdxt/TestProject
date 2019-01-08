@@ -14,7 +14,6 @@ import com.qa.base.BaseClass;
 public class MenPage extends BaseClass{
 	
 	@FindBy(xpath="(//input[@class='manufacturerproduct'])[1]") WebElement dellBrandCheckbox;
-	
 	@FindBy(xpath="(//input[@class='manufacturerproduct'])[2]") WebElement allenBrandCheckbox;
 	@FindBy(xpath="(//input[@class='manufacturerproduct'])[3]") WebElement samsungBrandCheckbox;
 	@FindBy(xpath="(//input[@class='manufacturerproduct'])[4]") WebElement fendiBrandCheckbox;
@@ -58,8 +57,7 @@ public class MenPage extends BaseClass{
 			    }
 			    Thread.sleep(2000);
 		}
-		
-		
+			
 		if(!allenBrandCheckbox.isSelected()) {
 			allenBrandCheckbox.click();
 			Thread.sleep(2000);
