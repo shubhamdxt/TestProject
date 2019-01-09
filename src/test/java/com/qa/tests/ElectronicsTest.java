@@ -23,7 +23,6 @@ public class ElectronicsTest extends BaseClass {
 	@BeforeMethod
 	public void setUp() {
 		initialization();
-		
 		loginPage=new LoginPage();
 		dashboardPage=new DashboardPage();
 		menPage=new MenPage();
