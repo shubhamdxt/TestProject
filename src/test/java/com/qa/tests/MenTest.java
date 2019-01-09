@@ -1,6 +1,9 @@
 package com.qa.tests;
 
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -21,7 +24,7 @@ public class MenTest extends BaseClass{
 	{
 		super();
 	}	
-	
+
 	@BeforeMethod
 	public void setUp() {
 		initialization();
@@ -40,7 +43,6 @@ public class MenTest extends BaseClass{
 	public void verifyProductSize() throws InterruptedException {
 //		 homePage.clickforLogin();
 //		  dashboardPage= loginPage.login(prop.getProperty("emailId"), prop.getProperty("password"));
-		 
 		dashboardPage.clickonMenLink();
 		Thread.sleep(2000);
 	    menPage.productSize();
@@ -57,6 +59,7 @@ public class MenTest extends BaseClass{
 	    menPage.allfilterByBrand();
 	    Thread.sleep(2000);
 	}
+
 	@AfterMethod
 	public void tearDown() {
 		driver.quit();
