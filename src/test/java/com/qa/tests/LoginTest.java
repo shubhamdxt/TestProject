@@ -36,7 +36,9 @@ public class LoginTest extends BaseClass{
 	
 	@Test(priority=1)
 	public void verifyLoginPageTitle() {
-		loginPage.loginPageTitle();
+		String titleOfLogin=loginPage.loginPageTitle();
+		System.out.println(titleOfLogin);
+
 	}
 	
 	@Test(priority=2)
