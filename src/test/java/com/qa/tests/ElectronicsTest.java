@@ -27,5 +27,6 @@ public class ElectronicsTest extends BaseClass {
 		loginPage=new LoginPage();
 		dashboardPage=new DashboardPage();
 		menPage=new MenPage();
+		System.out.println("my test");
 	}
 }
