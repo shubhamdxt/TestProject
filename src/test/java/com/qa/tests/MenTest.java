@@ -59,6 +59,19 @@ public class MenTest extends BaseClass{
 	    menPage.allfilterByBrand();
 	    Thread.sleep(2000);
 	}
+	
+	@Test(priority=0)
+	public void verifyfilterbyslider() throws InterruptedException {
+		Thread.sleep(2000);
+		dashboardPage.clickonMenLink();
+		Thread.sleep(2000);
+	   menPage.productSize();
+	   Thread.sleep(2000);
+	    menPage.allfilterByBrand();
+	    Thread.sleep(2000);
+	    menPage.filterBySilider();
+	    Thread.sleep(2000);
+	}
 
 	@AfterMethod
 	public void tearDown() {

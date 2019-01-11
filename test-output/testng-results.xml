@@ -1,45 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="83909" started-at="2019-01-08T12:01:34Z" finished-at="2019-01-08T12:02:58Z">
+  <suite name="Default suite" duration-ms="153803" started-at="2019-01-10T12:28:56Z" finished-at="2019-01-10T12:31:30Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="83909" started-at="2019-01-08T12:01:34Z" finished-at="2019-01-08T12:02:58Z">
+    <test name="Default test" duration-ms="153803" started-at="2019-01-10T12:28:56Z" finished-at="2019-01-10T12:31:30Z">
       <class name="com.qa.tests.MenTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.MenTest@66a3ffec]" name="setUp" is-config="true" duration-ms="10090" started-at="2019-01-08T17:31:34Z" finished-at="2019-01-08T17:31:44Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.MenTest@66a3ffec]" name="setUp" is-config="true" duration-ms="10425" started-at="2019-01-10T17:58:56Z" finished-at="2019-01-10T17:59:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyMenTitle()[pri:1, instance:com.qa.tests.MenTest@66a3ffec]" name="verifyMenTitle" duration-ms="15" started-at="2019-01-08T17:31:44Z" finished-at="2019-01-08T17:31:44Z">
+        <test-method status="PASS" signature="verifyfilterbyslider()[pri:0, instance:com.qa.tests.MenTest@66a3ffec]" name="verifyfilterbyslider" duration-ms="55153" started-at="2019-01-10T17:59:06Z" finished-at="2019-01-10T18:00:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyfilterbyslider -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.MenTest@66a3ffec]" name="tearDown" is-config="true" duration-ms="605" started-at="2019-01-10T18:00:02Z" finished-at="2019-01-10T18:00:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.MenTest@66a3ffec]" name="setUp" is-config="true" duration-ms="9737" started-at="2019-01-10T18:00:02Z" finished-at="2019-01-10T18:00:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyMenTitle()[pri:1, instance:com.qa.tests.MenTest@66a3ffec]" name="verifyMenTitle" duration-ms="19" started-at="2019-01-10T18:00:12Z" finished-at="2019-01-10T18:00:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyMenTitle -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.MenTest@66a3ffec]" name="tearDown" is-config="true" duration-ms="586" started-at="2019-01-08T17:31:44Z" finished-at="2019-01-08T17:31:45Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.MenTest@66a3ffec]" name="tearDown" is-config="true" duration-ms="594" started-at="2019-01-10T18:00:12Z" finished-at="2019-01-10T18:00:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.MenTest@66a3ffec]" name="setUp" is-config="true" duration-ms="9566" started-at="2019-01-08T17:31:45Z" finished-at="2019-01-08T17:31:54Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.MenTest@66a3ffec]" name="setUp" is-config="true" duration-ms="9613" started-at="2019-01-10T18:00:13Z" finished-at="2019-01-10T18:00:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyProductSize()[pri:2, instance:com.qa.tests.MenTest@66a3ffec]" name="verifyProductSize" duration-ms="5641" started-at="2019-01-08T17:31:54Z" finished-at="2019-01-08T17:32:00Z">
+        <test-method status="PASS" signature="verifyProductSize()[pri:2, instance:com.qa.tests.MenTest@66a3ffec]" name="verifyProductSize" duration-ms="5639" started-at="2019-01-10T18:00:22Z" finished-at="2019-01-10T18:00:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductSize -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.MenTest@66a3ffec]" name="tearDown" is-config="true" duration-ms="603" started-at="2019-01-08T17:32:00Z" finished-at="2019-01-08T17:32:00Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.MenTest@66a3ffec]" name="tearDown" is-config="true" duration-ms="610" started-at="2019-01-10T18:00:28Z" finished-at="2019-01-10T18:00:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.MenTest@66a3ffec]" name="setUp" is-config="true" duration-ms="9449" started-at="2019-01-08T17:32:00Z" finished-at="2019-01-08T17:32:10Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.tests.MenTest@66a3ffec]" name="setUp" is-config="true" duration-ms="12652" started-at="2019-01-10T18:00:28Z" finished-at="2019-01-10T18:00:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyfilterbybrand()[pri:3, instance:com.qa.tests.MenTest@66a3ffec]" name="verifyfilterbybrand" duration-ms="47334" started-at="2019-01-08T17:32:10Z" finished-at="2019-01-08T17:32:57Z">
+        <test-method status="PASS" signature="verifyfilterbybrand()[pri:3, instance:com.qa.tests.MenTest@66a3ffec]" name="verifyfilterbybrand" duration-ms="48121" started-at="2019-01-10T18:00:41Z" finished-at="2019-01-10T18:01:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyfilterbybrand -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.MenTest@66a3ffec]" name="tearDown" is-config="true" duration-ms="601" started-at="2019-01-08T17:32:57Z" finished-at="2019-01-08T17:32:58Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.MenTest@66a3ffec]" name="tearDown" is-config="true" duration-ms="618" started-at="2019-01-10T18:01:29Z" finished-at="2019-01-10T18:01:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

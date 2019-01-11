@@ -6,6 +6,8 @@ import org.apache.poi.hssf.record.PageBreakRecord.Break;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -19,6 +21,7 @@ public class MenPage extends BaseClass{
 	@FindBy(xpath="(//input[@class='manufacturerproduct'])[4]") WebElement fendiBrandCheckbox;
 	@FindBy(xpath="(//input[@class='manufacturerproduct'])[5]") WebElement coachBrandCheckbox;
 	@FindBy(xpath="(//input[@class='manufacturerproduct'])[6]") WebElement pradaBrandCheckbox;
+	@FindBy(xpath="//span[@class='ui-slider-handle ui-corner-all ui-state-default'][1]") WebElement sliderByPrice;
 	
 	public MenPage()   {
 		PageFactory.initElements(driver, this);
@@ -149,7 +152,22 @@ public class MenPage extends BaseClass{
 		
 		}
 		
-			
+			public void filterBySilider() throws InterruptedException 
+			{
+				int slidersizewidth = sliderByPrice.getSize().getWidth();//640               
+				//Actions action = new Actions(driver);
+				Actions move = new Actions(driver);
+		        Action action = (Action) move.dragAndDropBy(sliderByPrice, -50, 0).build();
+		        action.perform();
+				/*	action.clickAndHold(sliderByPrice);
+				action.moveByOffset(50, 0).build().perform();
+				Thread.sleep(2000);
+				action.clickAndHold(sliderByPrice);
+				Thread.sleep(2000);*/
+			//	action.moveByOffset(50, 0).build().perform();
+				Thread.sleep(5000);
+				
+			}
 		
 		
 		

@@ -5,11 +5,9 @@
     <classes>
       <class name="com.qa.tests.MenTest">
         <methods>
-          <include name="verifyMenTitle"/>
           <include name="tearDown"/>
-          <include name="verifyfilterbybrand"/>
-          <include name="verifyProductSize"/>
           <include name="setUp"/>
+          <include name="verifyfilterbyslider"/>
         </methods>
       </class> <!-- com.qa.tests.MenTest -->
     </classes>
