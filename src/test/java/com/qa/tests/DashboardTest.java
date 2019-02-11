@@ -36,6 +36,7 @@ public class DashboardTest extends BaseClass{
 	public void verifyDasboardTitle() {
 		dashboardPage.validateDashboardPageTitle();
 	}
+
 	@Test(priority=2)
 	public void verifyMenLink() throws InterruptedException {
 		  homePage.clickforLogin();
